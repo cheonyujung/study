@@ -13,7 +13,6 @@ hypothesis = X * W + b
 # cost/loss function
 cost = tf.reduce_mean(tf.square(hypothesis - Y))
 
-
 # Minimize
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.01)
 train = optimizer.minimize(cost)
