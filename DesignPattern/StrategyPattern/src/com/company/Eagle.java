@@ -2,12 +2,15 @@ package com.company;
 
 public class Eagle extends Animal{
 
-    public Eagle() {
+    String name;
 
+    public Eagle(String name) {
+        this.name = name;
+        cry = new EagleCry();
+        fly = new FlyWithWings();
     }
 
-    @Override
-    public void cry() {
-        System.out.println("끼룩");
+    public void printName() {
+        System.out.println(name);
     }
 }

@@ -2,12 +2,19 @@ package com.company;
 
 public class Animal {
 
+    protected Cry cry;
+    protected Fly fly;
+
     public Animal() {
 
     }
 
     public void cry() {
-        System.out.println("우는 소리");
+        cry.cry();
+    }
+
+    public void fly() {
+        fly.fly();
     }
 
     public void move() {
